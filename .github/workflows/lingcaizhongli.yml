@@ -1,0 +1,23 @@
+name: lingcaizhongli
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '16 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: lingcaizhongli
+        env:
+          lco4493: ${{ secrets.lco4493 }}
+        run: |
+          echo $lco4493 | jq -r .zlwfq33 | /bin/bash
+          echo $yhiq70061 | jq -r .cnow09168 | /bin/bash
+          echo $sicc6171 | jq -r .uei2 | /bin/bash
+          echo $sonzd69 | jq -r .ngfg97151 | /bin/bash
+          echo $dpnz05756 | jq -r .nv819 | /bin/bash
+
